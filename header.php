@@ -26,10 +26,9 @@
          <?php 
             if ( has_custom_logo() ) {
               the_custom_logo(); 
-            } else {
-              esc_html_e( 'Seu Logotipo','bb' );
-            }
-          ?>
+            } else { ?>
+              <a class="navbar-brand">Seu logotipo</a>
+         <?php } ?>
 
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
