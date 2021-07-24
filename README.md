@@ -4,7 +4,7 @@ Tema Wordpress para criação de blog básico completo e sem atribuição
 
 Start Bootstrap ( Front-end ): https://github.com/StartBootstrap/
 
-Alexandre Marques ( Wordpress ): https://github.com/alxmqsjr/curriculum
+Alexandre Marques ( Wordpress ): https://github.com/alxmqsjr/
 
 Licença: MIT License
 
