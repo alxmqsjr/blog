@@ -358,12 +358,12 @@ Version: 1.0
   margin: 0 !important;
 }
 
-.bb-widget ul li {
+.bb-widget ul li, .card ul li {
   list-style: none;
   line-height: 20px !important;
 }
 
-.bb-widget ul, .bb-widget p, .bb-widget ol, .bb-widget .wp-block-table {
+.bb-widget ul, .bb-widget p, .bb-widget ol, .bb-widget .wp-block-table, .bb-archive ul {
   padding: 15px 25px !important;  
   margin: 0;
 }
@@ -380,7 +380,7 @@ Version: 1.0
   padding: 10px !important;
 }
 
-.wp-block-categories li, .wp-block-rss li, .wp-embedded-content li {
+.wp-block-categories li, .wp-block-rss li, .wp-embedded-content li, .bb-archive ul li {
   padding: 5px 0 !important;
 }
 

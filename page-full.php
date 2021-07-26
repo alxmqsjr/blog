@@ -13,7 +13,7 @@
                 
                 if ( comments_open() ) { 
                 ?>
-                    <hr class="bb-hr">
+                <hr class="bb-hr">
                 <?php
                     comments_template();
                 }
