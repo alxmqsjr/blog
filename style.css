@@ -113,7 +113,7 @@ Version: 1.0
 .navbar-dark .navbar-nav .menu-item a.show,
 .navbar-dark .navbar-nav .menu-item a.active {
   color: #fff;
-}
+} 
 
 .navbar-nav .sub-menu li {
   list-style: none !important;
@@ -278,6 +278,7 @@ Version: 1.0
 
 .bb-comment-list {
   padding: 0 !important;
+  background-color: transparent !important;
 }
 
 .comment-reply-link {
@@ -296,7 +297,7 @@ Version: 1.0
 }
 
 .comment .comment-body {
-  background-color: #fff; 
+  background-color: transparent; 
   margin: 0; 
   overflow: hidden; 
   padding-left: 70px; 
@@ -432,10 +433,6 @@ Version: 1.0
   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
-.search-icon {
-  color: #fff;
-}
-
 
 /* 404 */
 .bb-error {
@@ -456,7 +453,7 @@ Version: 1.0
 @media ( min-width: 992px ) {
   .navbar-nav .sub-menu {
     position: absolute;
-    background-color: #343a40 !important;
+    background-color: #343a40;
     min-width: 200px;
     padding: 10px 10px;
     border-bottom-right-radius: .25rem;

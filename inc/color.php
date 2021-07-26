@@ -10,7 +10,7 @@
     }
 
     /* hover dos links */
-    .bb-widget a:hover, .bb-post a:hover, .nav-links a:hover {
+    .bb-widget a:hover, .bb-post a:hover, .nav-links a:hover, .card-footer a:hover {
         color: 
             <?php if ( get_theme_mod( 'bb_color_link_hover' ) ) {
                 echo get_theme_mod( 'bb_color_link_hover' ); 
@@ -19,7 +19,7 @@
     }
 
     /* Cor do header */
-    .navbar {
+    .navbar, .sub-menu, .sub-menu li {
         background-color: 
             <?php if ( get_theme_mod( 'bb_color_header' ) ) {
                 echo get_theme_mod( 'bb_color_header' ); 
@@ -38,6 +38,20 @@
             ?>
     }
 
+    /* Cor do hamburguer */
+    <?php if ( get_theme_mod( 'bb_color_menu' ) ) : ?>
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='<?php echo get_theme_mod( 'bb_color_menu' ); ?>' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+        }
+    <?php endif; ?>
+
+    /* Cor da borda do hamburguer */
+    <?php if ( get_theme_mod( 'bb_color_menu' ) ) : ?>
+        .navbar-toggler {
+            border-color: <?php echo get_theme_mod( 'bb_color_menu' ); ?> !important;
+        }
+    <?php endif; ?>
+
     /* cor hover dos links do menu */
     .menu-item a:hover {
     color: 
@@ -53,7 +67,7 @@
     <?php } ?>
 
     /* Cor dos botões */
-    .btn-secondary {
+    .btn-secondary, .wp-block-search__button {
         background-color: 
             <?php if ( get_theme_mod( 'bb_color_button' ) ) {
                 echo get_theme_mod( 'bb_color_button' ); 
@@ -65,15 +79,34 @@
     }
 
     /* Cor hover dos botões */
-    .btn-secondary:hover {
-    background-color: 
-        <?php if ( get_theme_mod( 'bb_color_button_hover' ) ) {
-            echo get_theme_mod( 'bb_color_button_hover' ); 
-            echo " !important;"; }  ?>;
-    border-color: 
-        <?php if ( get_theme_mod( 'bb_color_button_hover' ) ) {
-            echo get_theme_mod( 'bb_color_button_hover' ); 
-            echo " !important;"; }  ?>
+    .btn-secondary:hover, .wp-block-search__button:hover {
+        background-color: 
+            <?php if ( get_theme_mod( 'bb_color_button_hover' ) ) {
+                echo get_theme_mod( 'bb_color_button_hover' ); 
+                echo " !important;"; }  ?>;
+        border-color: 
+            <?php if ( get_theme_mod( 'bb_color_button_hover' ) ) {
+                echo get_theme_mod( 'bb_color_button_hover' ); 
+                echo " !important;"; }  ?>
+    }
+
+    .search-icon {
+        fill:
+            <?php if ( get_theme_mod( 'bb_color_btn_search' ) ) {
+                echo get_theme_mod( 'bb_color_btn_search' );
+                echo " !important;";
+            } else { ?>
+                #fff !important;
+            <?php } ?>
+    }
+    .wp-block-search__button {
+        color:
+            <?php if ( get_theme_mod( 'bb_color_btn_search' ) ) {
+                echo get_theme_mod( 'bb_color_btn_search' );
+                echo " !important;";
+            } else { ?>
+                #fff !important;
+            <?php } ?>
     }
 
     /* Cor do rodapé */

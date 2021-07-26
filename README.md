@@ -44,7 +44,7 @@ os padrões e princípios corretos do desenvolvimento de temas Wordpress.
 
 11 - Os posts são criados em Posts -> Adicionar novo;
 
-12 - O blog trabalha melhor com Widgets clássicos ( basta instalar o plugin correspondente ), mas se você usar o moderno sistema de blocos do wordpress, os widgets precisam seguir uma regra: Adicione um título h2, depois o widget escolhido, em seguida selecione os dois e com o botão direito clique em "Grupo". Com os dois agrupados, o box da sidebar ficará tal como mostrado no layout. Se você usar o sistema clássico de widgets não se preocupe com isso.
+12 - O blog trabalha melhor com Widgets clássicos ( basta instalar o plugin correspondente ), mas se você usar o moderno sistema de blocos do wordpress, os widgets precisam seguir uma regra: Adicione um título h2, depois o widget escolhido, em seguida selecione os dois, clique no ícone de três pontos e clique em "Agrupar". Com os dois agrupados, o box da sidebar ficará tal como mostrado no layout. Se você usar o sistema clássico de widgets não se preocupe com isso.
 
 
 

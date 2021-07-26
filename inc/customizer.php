@@ -71,6 +71,15 @@ function bb_customize_register( $wp_customize ) {
         'setting' => 'bb_color_button_hover'
     ) ) );
 
+    // Mudar a cor do ícone do botão de pesquisa
+    $wp_customize->add_setting( 'bb_color_btn_search', array( 'default' => '' ) );
+    $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'bb_color_btn_search', array(
+        'label' => __( 'Cor do simbolo no botão de pesquisa' ),
+        'description' => __( 'Muda a cor do texto e/ou da lupa do botão de pesquisa, dependendo da configuração' ),
+        'section' => 'colors',
+        'setting' => 'bb_color_btn_search'
+    ) ) );
+
     //Cor de fundo do rodapé
     $wp_customize->add_setting( 'bb_color_footer', array( 'default' => '#343a40' ) );
     $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'bb_color_footer', array(
