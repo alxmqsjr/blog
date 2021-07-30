@@ -464,6 +464,9 @@ Version: 1.0
   .menu-item:hover .sub-menu {
     display: block !important;
   }
+  .menu-item:hover .sub-menu li {
+    display: block !important;
+  }
   .bb-dropdown .menu-item-has-children > a::after {
     content: "";
     display: inline-block;
@@ -480,5 +483,22 @@ Version: 1.0
 @media ( max-width: 991px ) {
   .navbar-nav .sub-menu {
     display: block !important;
+  }
+  .sub-menu li a::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid;
+  }
+  .sub-menu li a{
+    padding: 0 !important;
+  }
+  .menu-item-has-children a {
+    padding-bottom: 0 !important;
   }
 }

@@ -21,7 +21,7 @@ function bb_customize_register( $wp_customize ) {
     ) ) );
 
     // Desativa underline
-    $wp_customize->add_setting( 'bb_line_check', array( 'default' => '' ));
+    $wp_customize->add_setting( 'bb_line_check', array( 'default' => '' ) );
     $wp_customize->add_control( 'bb_line_check', array(
         'label' => __( 'Não quero hover com links sublinhados', 'bb' ), 
         'section' => 'colors', 
@@ -41,6 +41,7 @@ function bb_customize_register( $wp_customize ) {
     $wp_customize->add_setting( 'bb_color_menu', array( 'default' => '' ) );
     $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'bb_color_menu', array(
         'label' => __( 'Cor dos links do menu', 'bb' ),
+        'description' => __( 'A alteração também ocorrerá no ícone mobile do menu', 'bb' ),
         'section' => 'colors',
         'setting' => 'bb_color_menu'
     ) ) );
@@ -96,7 +97,6 @@ function bb_customize_register( $wp_customize ) {
         'setting' => 'bb_color_footer_txt'
     ) ) );
 
-    
     // Menu
     //Adicionando seção ao painel Menu do Wordpress
     $wp_customize->add_section( 'bb_nav_menus', array(
@@ -112,8 +112,6 @@ function bb_customize_register( $wp_customize ) {
         'type' => 'checkbox',
         'input_attrs' => array ( 'style' => 'margin-bottom:30px;' )
     ) );
-
-
 
     //Rodapé
     $wp_customize->add_setting( 'bb_footer_txt', array( 'default' => 'Seu website' ) );

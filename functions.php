@@ -87,21 +87,13 @@ function aplicacoes_digitais_more ( $more ) {
 }
 add_filter( 'excerpt_more', 'aplicacoes_digitais_more' );
 
-// Definindo class para os links da paginação
-// function wpdocs_add_post_link( $html ){
-//     $html = str_replace( '<a ', '<a class="page-link" ', $html );
-//     return $html;
-// }
-// add_filter( 'next_post_link', 'wpdocs_add_post_link' );
-// add_filter( 'previous_post_link', 'wpdocs_add_post_link' );
-
-
 function bb_scripts() {
 	wp_enqueue_style( 'bb-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_style_add_data( 'bb-style', 'rtl', 'replace' );
     wp_enqueue_style( 'bb-bootstrap', get_template_directory_uri().'/assets/css/bootstrap/bootstrap.min.css', array());
 	wp_enqueue_script( 'bb-jq-script', get_template_directory_uri().'/assets/js/jquery/jquery.min.js', array(), null, true );
 	wp_enqueue_script( 'bb-js-bootstrap', get_template_directory_uri().'/assets/js/bootstrap/bootstrap.bundle.min.js', array('jquery'), null, true );
+	wp_enqueue_script( 'bb-js-script', get_template_directory_uri().'/assets/js/scripts.js', array('jquery'), null, true );
 }
 add_action( 'wp_enqueue_scripts', 'bb_scripts' );
 
