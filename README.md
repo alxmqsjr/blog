@@ -8,9 +8,9 @@ Alexandre Marques ( Wordpress ): https://github.com/alxmqsjr/
 
 Licença: MIT License
 
+![Screenshot](screenshot.png)
 
-
-== Descrição ==
+=== Descrição ===
 
 Front-end do blog foi desenvolvido pela equipe da Start Bootstrap. 
 A conversão para Wordpress foi desenvolvida por mim, de modo a possibilitar um blog básico e completo sem atribuição.
@@ -18,9 +18,7 @@ A conversão para Wordpress foi desenvolvida por mim, de modo a possibilitar um 
 Este tema foi feito com base no modelo da https://underscores.me/ e, portanto, tenta seguir 
 os padrões e princípios corretos do desenvolvimento de temas Wordpress. 
 
-
-
-== Instalação e Utilização ==
+=== Instalação e Utilização ===
 
 1 - Faça o download dos arquivos zipados do github;
 
@@ -48,7 +46,7 @@ os padrões e princípios corretos do desenvolvimento de temas Wordpress.
 
 
 
-== Licença ==
+=== Licença ===
 
 https://github.com/startbootstrap/startbootstrap-blog-post/blob/master/LICENSE
 
